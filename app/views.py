@@ -20,7 +20,6 @@ class update(UpdateView):
     success_url = "/"
     fields = {'title','completed'}
 
-    
 class delete(DeleteView):
     model = Todo
     template_name = "delete.html"

@@ -71,7 +71,7 @@
 			<a class="btn btn-sm btn-info button" href="{% url 'update' entry.id %}">Update</a>
 			<a class="btn btn-sm btn-danger" href="{% url 'delete' entry.id %}">Delete</a>
 
-			{% if entry.complete == True %}
+			{% if entry.completed == True %}
 			<strike>{{entry}}</strike>
 			{% else %}
 			<span>{{entry}}</span>
